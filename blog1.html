@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>NIFT EXPERIENCE</title>
+    <style>
+        body{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        .like-btn, .comment-btn {
+            align-items: left;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .like-btn:hover, .comment-btn {
+            background-color: #0056b3;
+        }
+
+        .like-btn:active {
+            background-color: #0056b3;
+            transform: translateY(1px);
+        }
+
+        .comments {
+            margin-top: 20px;
+        }
+
+        .comments h3{
+            padding-bottom: 20px;
+            text-align: left;
+        } 
+
+        textarea {
+            width: 25%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>IIIT HYDERABAD UG1 - NIFT EXPERIENCE</h2>
+    <p><br> We IIITians are preparing for the Felicity FlashMob which is held on 3rd Februrary 2024 at
+        Lulu Mall. We all are very much excited to dance there and market our collge to the people.
+        It went too great and we got a lot of attention from the people.
+        Later, we had dinner there and everyone decided to go NIFT as few days back, NIFT had their flashmob
+        in our college. So, we decided to go there and have fun. We went there and at the entry we faced problem
+        as the security didn't allow us to enter. But, we managed to enter and we thought of having lot of fun there.
+        But everything doesn't goes as we think.
+        <br>
+        Their show started at 9:00 PM. Firstly, fashion show started and it was trauma for us as we couldn't relate
+        to it. Later, oue seniors performed and it was too good. We enjoyed a lot and we had a lot of fun there.
+        <br>
+        After randomly, we are dancing for the concert songs and whole NIFT is watching us. It felt like only we people
+        are
+        enjoying more than NIFT students. We chanted "FELICITY FELICITY FELICITY" and we had a lot of fun there.
+        It was a great night there.
+
+        <br><br>DOST KO LADKI NHI MILI, SOOO SAD !!
+    </p>
+    <button class="like-btn" id="likeButton" onclick="toggleLike()">Like</button>
+    <span id="likeCounter">0</span> Likes
+
+    <div class="comments">
+        <h3>COMMENTS</h3>
+        <textarea id="commentInput" placeholder="Add a comment"></textarea>
+        <button class="comment-btn" onclick="addComment()">Add Comment</button>
+        <ul id="commentList"></ul>
+    </div>
+    </div>
+    <script src="script-blog.js"></script>
+</body>
+
+</html>

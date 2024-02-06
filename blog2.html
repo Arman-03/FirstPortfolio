@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>MY CONFESSION</title>
+    <style>
+        body{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        .like-btn,
+        .comment-btn {
+            align-items: left;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .like-btn:hover,
+        .comment-btn {
+            background-color: #0056b3;
+        }
+
+        .like-btn:active {
+            background-color: #0056b3;
+            transform: translateY(1px);
+        }
+
+        .comments {
+            margin-top: 20px;
+        }
+
+        .comments h3 {
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        textarea {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>IIIT HYDERABAD - MY FIRST CRUSH</h2>
+    <p>
+        I vividly remember the first time our paths crossed in the bustling corridors of IIIT Hyderabad. She caught my
+        eye effortlessly, her presence illuminating the mundane surroundings. From that moment on, I found myself drawn
+        to her, captivated by her charming demeanor and infectious laughter. She possessed a rare combination of wit,
+        beauty, and grace, her every word leaving me hanging on for more. But it wasn't just her outward appearance that
+        enchanted me; it was the genuine kindness and warmth she exuded, making everyone around her feel at ease. Her
+        impeccable sense of style only added to her allure, each outfit a reflection of her vibrant personality. In her
+        presence, time seemed to stand still, and my heart beat with a rhythm only she could orchestrate. Though our
+        paths may have diverged since those days, the memory of her continues to linger, a bittersweet reminder of my
+        first crush and the indelible mark she left on my heart.
+    </p>
+    <button class="like-btn" id="likeButton" onclick="toggleLike()">Like</button>
+    <span id="likeCounter">0</span> Likes
+
+    <div class="comments">
+        <h3>COMMENTS</h3>
+        <textarea id="commentInput" placeholder="Add a comment"></textarea>
+        <button class="comment-btn" onclick="addComment()">Add Comment</button>
+        <ul id="commentList"></ul>
+    </div>
+    </div>
+    <script src="script-blog.js"></script>
+</body>
+
+</html>
